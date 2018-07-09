@@ -1,6 +1,6 @@
 console.log("Hello world!")
-Hello world!
+VM297:1 Hello world!
 undefined
 console.log("Betty Holberton")
-Betty Holberton
+VM303:1 Betty Holberton
 undefined
