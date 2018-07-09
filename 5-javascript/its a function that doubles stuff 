@@ -1,0 +1,7 @@
+var x = Yes(2)
+
+
+function Yes(a) {
+    return a * 2;
+}
+x
