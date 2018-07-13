@@ -1,12 +1,11 @@
-<!DOCTYPE javascript>
-var i,j;
-i=0
-while (i<24) {
-    j=0;
-    while (j<60) {
-      j++;
-      console.log(j)
+var h,m;
+h=0
+while (h<24) {
+    m=0;
+    while (m<60) {
+      m++;
+      console.log(m)
     }
-  i++;
-  console.log(i);
+  h++;
+  console.log(h);
 }
