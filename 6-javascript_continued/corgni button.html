@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      function corgi(){
+     var src = "https://i.pinimg.com/originals/fb/70/05/fb7005104f12151f9e286f3e886d99ee.jpg";
+     show_image("https://i.pinimg.com/originals/fb/70/05/fb7005104f12151f9e286f3e886d99ee.jpg");
+      }
+
+      function show_image(src){
+        var img = document.createElement("img");
+        img.src = src;
+        document.body.appendChild(img);
+      }
+      </script>
+
+
+</head>
+<body>
+
+<div class="container">
+  <div class="row" style="background-color:lightcyan;border:4px double deepskyblue;height:50px;padding-top:10px;width:70%;display:inline-block;float:center;margin:auto;text-align:center">
+      <p>mitosis demonstration</p>
+  </div>
+</div>
+
+<button onclick="corgi();"><img src= "https://i.pinimg.com/originals/fb/70/05/fb7005104f12151f9e286f3e886d99ee.jpg"></img></button>
+
+
+</body>
+
+</html>
