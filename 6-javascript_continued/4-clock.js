@@ -1,3 +1,5 @@
+console.log("0")
+
 var h,m;
 h=0
 while (h<24) {
