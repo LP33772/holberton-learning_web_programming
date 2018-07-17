@@ -26,6 +26,13 @@ a:hover {
 
 html,
 body {
+  background: url(http://www.adventureprofessionals.com.au/wp-content/uploads/2014/03/AP-Adventure-on-High.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+body {
   height: 100%;
   background-color: #333;
 }
