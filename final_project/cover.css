@@ -25,13 +25,7 @@ a:hover {
  */
 
 html,
-body {
-  background: url(https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/S15GBCm/ride-through-a-cartoon-highway-seamless-loop-animated-road-on-a-sunny-day-with-space-for-your-object-text-or-logo-seamlessly-loop-colorful-cartoon-nature-background_hyutlrok__F0007.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 body {
   height: 100%;
   background-color: #333;
