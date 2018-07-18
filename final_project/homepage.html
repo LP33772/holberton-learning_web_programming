@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.container {
+    position: relative;
+    width: 100%;
+
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: gray;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+
+#Home {background-color:gray;}
+#Memes{background-color:gray;}
+#About {background-color:gray;}
+#Help {background-color:gray;}
+</style>
+</head>
+<body>
+
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Choose your own adventure.</p>
+</div>
+
+<div id="Memes" class="tabcontent">
+  <h3>Meme Page</h3>
+  <p>A bunch of memes.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Thats sad alexa play despacito.</p>
+</div>
+
+<div id="Help" class="tabcontent">
+  <h3>Help</h3>
+  <p>Learn how to use a computer pls thanks.</p>
+</div>
+
+<button class="tablink" onclick="openCity('Home', this, 'gray')" id="defaultOpen">Home</button>
+<button class="tablink" onclick="openCity('Memes', this, 'gray')">Meme Page</button>
+<button class="tablink" onclick="openCity('About', this, 'gray')">About</button>
+<button class="tablink" onclick="openCity('Help', this, 'gray')">Help</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+document.getElementById("defaultOpen").click();
+</script>
+<div class="container">
+  <img src="http://www.adventureprofessionals.com.au/wp-content/uploads/2014/03/AP-Adventure-on-High.jpg" alt="Adventure" style="width:100%">
+  <button class="btn">Launch</button>
+</div>
+</body>
+</html>
